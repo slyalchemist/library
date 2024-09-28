@@ -18,11 +18,16 @@ The main objective of this project is to create a website in which displays the 
 
 ## Links to Work
 
+[Repository](https://github.com/slyalchemist/library)
+
+[Live Site](https://slyalchemist.github.io/library/)
+
 ## References
 
 [Modal Background Image by Werner Weisser](https://pixabay.com/users/avantrend-321510/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=436578)
 
 ## Author's Notes
 *Start Date* [09.26.2024]
+*Finish Date* [09.28.2024]
 
 Programmed by slyalchemist
