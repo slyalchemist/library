@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Alchemist's Library</title>
+    <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to the Alchemist's Library</h1>
+    </div>
+    
+
+    <button id="addBook">Add a New Book</button>
+
+    <div id="container">
+        
+    </div>
+
+    <div id="bookModal" class="modal">
+
+        <div class="modalContent">
+            <form>
+                <div class="modalHeader">
+                    <h2>Book Information</h2>
+                    <span class="close">&times;</span>
+                </div>
+
+                <div class="modalForm">
+                    <label for="title">What is the book titled?</label>
+                    <input id="title" type="text">
+
+                    <label for="author">Who wrote the book?</label>
+                    <input id="author" type="text">
+
+                    <label for="pages">How many pages is it?</label>
+                    <input id="pages" type="text">
+
+                    <label for="read">Have you read this book?</label>
+                    <input id="read" type="checkbox">
+
+                    <label for="finishBook"></label>
+                    <input id="finishBook" type="button" value="All done?">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

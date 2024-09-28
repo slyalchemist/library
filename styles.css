@@ -1,0 +1,192 @@
+@import url(https://fonts.bunny.net/css?family=autour-one:400);
+
+:root {
+    font-family: 'Autour One', display;
+    --main-text: rgb(47,47,47);
+    --subtext: rgb(71,71,71);
+    --header-bg: rgb(236, 236, 222);
+    --header-shadow: rgb(216, 216, 202);
+    --main-bg: rgb(224,224,210);
+    --main-accent: rgb(245,207,173);
+    --dark-accent: rgb(242,188,147);
+    --light-contrast: rgb(224,246,243);
+    --dark-contrast: rgb(176,240,249);
+}
+
+body{
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: var(--header-bg);
+    box-shadow: 1px 0px 5px var(--header-shadow);
+    width: 100%;
+}
+
+#addBook{
+    font-family: 'Autour One', display;
+    background-color: var(--light-contrast);
+    font-weight: 800;
+    color: var(--subtext);
+    width: 240px;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    margin-top: 24px;
+}
+
+#addBook:hover, 
+#addBook:focus{
+    background-color: var(--dark-contrast);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+h1{
+    text-align: center;
+}
+
+.bookDisplay{
+    background-color: var(--main-accent);
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 160px;
+    height: 240px;
+    padding: 12px;
+    box-shadow: 0px 0px 5px var(--dark-accent);
+
+}
+
+.authorDiv{
+    color: var(--subtext);
+    text-align: center;
+}
+
+.readDiv{
+    width: 120px;
+    height: 32px;
+    background: radial-gradient(var(--dark-contrast), var(--light-contrast));
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.active{
+    content: "read";
+    background: radial-gradient(var(--light-contrast), var(--dark-contrast));
+}
+
+.removeBook{
+    background-color: var(--dark-contrast);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--subtext);
+    width: 80%;
+    height: 10%;
+    border-radius: 12px;
+    font-size: 90%;
+    transition: 0.3s;
+}
+
+.removeBook:hover,
+.removeBook:focus{
+    background-color: var(--light-contrast);
+    box-shadow: 3px 1px 5px var(--dark-contrast);
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--light-contrast);
+    background-image: url(natural-medicine-436578_1280.jpg);
+}
+
+.modalContent{
+    background-color:var(--dark-contrast);
+    margin: 5% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 24px;
+    width: 440px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalHeader{
+    display: flex;
+}
+
+h2{
+    margin-right: auto;
+}
+
+.modalForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#finishBook{
+    font-family: 'Autour One', display;
+    font-weight: 600;
+    background-color: var(--dark-accent);
+    width: 120px;
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+    transition: 0.3s;
+}
+
+#finishBook:hover,
+#finishBook:focus{
+    background-color: var(--main-accent);
+    box-shadow: 0px 0px 5px var(--dark-accent);
+    cursor: pointer;
+}
